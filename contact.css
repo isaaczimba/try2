@@ -8,7 +8,9 @@ body{
   background-attachment: fixed;
   color: white;
 }
-
+.hide{
+  display: none;
+}
 /*------------------------bottom--------------------------------------------------------------*/
 
 .container{
