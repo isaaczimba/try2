@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Elite Energy Services</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="index.php">
+</head>
+<body>
+ <div class="nav-container">
+  <a class="logo-container" href="index.html"><img class="logo-img" src="logo.png" alt=""></a>
+  <!--<div class="second"><a href="#">Elite</a></div>-->
+    <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+    <ul class="topbar" >
+      <!--<li><a href="#">Elite</a></li>-->
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="about-us-page.html">About Us</a></li>
+      <li class="hideOnMobile"><a href="services-page.html">Our Services</a></li>
+      <li class="hideOnMobile" id="contact"><a class="a-item"  href="#">Get in touch with Us</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+ </div>
+<!-------------------------------------------------------------------------------------------------------------->
+<h1>Contact us today, we're very friendly and professional :)</h1>
+    <p>Talk to an expert today for consultations, quotations or to find out more about our services.</p>
+    <hr>
+<div class="contacts-container">
+  <div class="container">
+        <h1>Get in touch</h1>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <input type="hidden" name="access_key" value="697356d1-5624-46f0-a776-cbb6aa9ce580">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <input type="contact" name="number" placeholder="Your Number" class="contact-inputs">
+        <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+        <button type="submit">Submit</button>    
+    </form>
+        <div class="contact"></div>
+    </div>
+    <div class="cont-sec2">
+       <div class="contacts-items">
+            <a href="mailto:eliteenergyservices6@gmail.com" target="_blank"><img class="email-icon"
+                    src="email_gmail_icon.png" alt="">Email: eliteenergyservices6@gmail.com</a>
+        </div>
+        <div class="contacts-items">
+            <a href="tel:+260972381101"><img class="phone-icon" src="call-auricular-black-symbol_41714.png" alt="">Tel: +260 97 2381101</a>
+
+        </div>
+        <div class="contacts-items">
+            <a href="https://www.facebook.com/isaac.zimba.1654" target="_blank"><img class="fb-social" src="green-facebook.png"
+                    alt="">Like us on facebook: @eliteenergyservices</a>
+        </div>
+        <div class="contacts-items">
+            <a href="https://wa.me/+260972381101" target="_blank"><img class="wa-social" src="whatsapp_220378.png" alt="">Message us on WhatsApp: +260 97 2381101</a>
+        </div>
+    </div>
+        
+</div>
+
+
+ <form action="index.php" method="POST">
+	<label>Name:</label><input type="text" name="contact_name"><br><br>
+	<label>Email address:</label><input type="Email" name="contact_email"><br><br>
+	<label>message</label><textarea name="contact_text" rows="8" cols="30"></textarea><br><br>  </div>
+	<input type="submit" value="send" style="height: 30px; border-radius: 20px; background-color: coral">
+</form>
+
+ <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+</body>
